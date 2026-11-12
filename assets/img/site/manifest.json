@@ -1,0 +1,341 @@
+{
+ "destacado-casa": {
+  "h": 1125,
+  "src": "house-exterior.jpg",
+  "variants": [
+   480,
+   900
+  ],
+  "w": 900
+ },
+ "est-dibujo": {
+  "h": 1050,
+  "src": "web-design.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-ideas": {
+  "h": 1050,
+  "src": "strategy-session.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-materioteca": {
+  "h": 1050,
+  "src": "branding.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-mesa": {
+  "h": 1050,
+  "src": "hero-workspace.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-obra": {
+  "h": 1050,
+  "src": "structure.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-oficina": {
+  "h": 1050,
+  "src": "office-interior.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-presentacion": {
+  "h": 1050,
+  "src": "client-meeting.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-visita": {
+  "h": 1050,
+  "src": "team-site.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "hero-dormitorio": {
+  "h": 1125,
+  "src": "bedroom.jpg",
+  "variants": [
+   360,
+   600,
+   900
+  ],
+  "w": 900
+ },
+ "hero-materiales": {
+  "h": 1125,
+  "src": "hero-workspace.jpg",
+  "variants": [
+   360,
+   600,
+   900
+  ],
+  "w": 900
+ },
+ "hero-sala": {
+  "h": 1350,
+  "src": "living-room.jpg",
+  "variants": [
+   480,
+   800,
+   1080
+  ],
+  "w": 1080
+ },
+ "interiorista-retrato": {
+  "h": 600,
+  "src": "consultant-portrait.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "nosotros-equipo": {
+  "h": 845,
+  "src": "team-group.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "perfil-interiorista": {
+  "h": 1125,
+  "src": "consultant-portrait.jpg",
+  "variants": [
+   480,
+   900
+  ],
+  "w": 900
+ },
+ "proy-bodega": {
+  "h": 600,
+  "src": "warehouse.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-casa": {
+  "h": 600,
+  "src": "house-exterior.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-clinica": {
+  "h": 600,
+  "src": "hallway-architecture.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-cocina": {
+  "h": 600,
+  "src": "kitchen.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-departamento": {
+  "h": 600,
+  "src": "bedroom.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-hotel": {
+  "h": 600,
+  "src": "case-hotel.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-oficinas": {
+  "h": 600,
+  "src": "office-building.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-restaurante": {
+  "h": 600,
+  "src": "case-restaurant.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-terraza": {
+  "h": 600,
+  "src": "rooftop.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "svc-anteproyecto": {
+  "h": 667,
+  "src": "web-design.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-asesoria": {
+  "h": 667,
+  "src": "client-meeting.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-comercial": {
+  "h": 667,
+  "src": "office-interior.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-exteriores": {
+  "h": 667,
+  "src": "rooftop.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-iluminacion": {
+  "h": 667,
+  "src": "lobby.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-interiorismo": {
+  "h": 667,
+  "src": "living-room.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-materiales": {
+  "h": 667,
+  "src": "branding.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-mobiliario": {
+  "h": 667,
+  "src": "kitchen.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-obra": {
+  "h": 667,
+  "src": "team-site.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-planos": {
+  "h": 667,
+  "src": "hero-plans.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-remodelacion": {
+  "h": 667,
+  "src": "remodel.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-residencial": {
+  "h": 667,
+  "src": "house-exterior.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ }
+}
