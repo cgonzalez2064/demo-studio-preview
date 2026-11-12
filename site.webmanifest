@@ -1,7 +1,7 @@
 {
   "name": "Alero",
   "short_name": "Alero",
-  "description": "Estudio de arquitectura e interiorismo en Ciudad de Guatemala (sitio de demostración)",
+  "description": "Estudio de diseño y fotografía en Ciudad de Guatemala (sitio de demostración)",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f2ede4",

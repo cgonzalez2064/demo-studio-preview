@@ -12,7 +12,7 @@
    - Work stops when its element is off screen or the tab is hidden.
 
    Packages: Express and Starter get the essentials (header, ribbon, scroll effects, counters).
-   Profesional adds the floor plan drafted behind the headline and magnetic buttons. Premium adds the
+   Profesional adds the viewfinder drawn behind the headline and magnetic buttons. Premium adds the
    cursor label and the depth effect on the cover photos.
    ========================================================================== */
 (function () {
@@ -230,7 +230,7 @@
 
   if (tier < 2) return;
 
-  /* ---------- 5. A floor plan drafted behind the headline (canvas) ---------- */
+  /* ---------- 5. A camera viewfinder drawn behind the headline (canvas) ---------- */
   (function () {
     var canvas = doc.querySelector('[data-plan]');
     var hero = canvas && canvas.parentNode;
@@ -256,34 +256,23 @@
       plan = make(); t0 = performance.now();
       if (!running) paint(performance.now());
     }
-    // Recursive subdivision of a rectangle into rooms: every cut is a wall with a door.
+    // The frame of a photograph being composed.
     function make() {
       var wide = w >= 900;
       var x0 = snap(wide ? w * 0.5 : w * 0.06), y0 = snap(h * (wide ? 0.14 : 0.1));
       var W = snap(w - x0 - (wide ? 48 : w * 0.06)), H = snap(Math.min(h * 0.62, W * 0.78));
-      var segs = [[x0, y0, x0 + W, y0], [x0 + W, y0, x0 + W, y0 + H], [x0 + W, y0 + H, x0, y0 + H], [x0, y0 + H, x0, y0]];
-      var doors = [];
-      (function cut(x, y, cw, ch, depth) {
-        if (depth > 3 || cw < 120 || ch < 100) return;
-        var vertical = cw / ch > 1.15 ? true : ch / cw > 1.15 ? false : Math.random() < 0.5;
-        var k = 0.36 + Math.random() * 0.28;
-        if (vertical) {
-          var sx = snap(x + cw * k); if (sx <= x + G || sx >= x + cw - G) return;
-          var dy = snap(y + ch * (0.25 + Math.random() * 0.4));
-          segs.push([sx, y, sx, dy - 16], [sx, dy + 16, sx, y + ch]);
-          doors.push({ x: sx, y: dy - 16, a0: 0, a1: Math.PI / 2 });
-          cut(x, y, sx - x, ch, depth + 1); cut(sx, y, x + cw - sx, ch, depth + 1);
-        } else {
-          var sy = snap(y + ch * k); if (sy <= y + G || sy >= y + ch - G) return;
-          var dx = snap(x + cw * (0.25 + Math.random() * 0.4));
-          segs.push([x, sy, dx - 16, sy], [dx + 16, sy, x + cw, sy]);
-          doors.push({ x: dx - 16, y: sy, a0: Math.PI * 1.5, a1: Math.PI * 2 });
-          cut(x, y, cw, sy - y, depth + 1); cut(x, sy, cw, y + ch - sy, depth + 1);
-        }
-      })(x0, y0, W, H, 0);
+      // A viewfinder: corner marks, the rule-of-thirds lines and a focus point on one crossing.
+      var c = 56, x1 = x0 + W, y1 = y0 + H;
+      var segs = [[x0, y0 + c, x0, y0], [x0, y0, x0 + c, y0], [x1 - c, y0, x1, y0], [x1, y0, x1, y0 + c],
+        [x1, y1 - c, x1, y1], [x1, y1, x1 - c, y1], [x0 + c, y1, x0, y1], [x0, y1, x0, y1 - c]];
+      var tx1 = snap(x0 + W / 3), tx2 = snap(x0 + W * 2 / 3), ty1 = snap(y0 + H / 3), ty2 = snap(y0 + H * 2 / 3);
+      segs.push([tx1, y0 + G, tx1, y1 - G], [tx2, y0 + G, tx2, y1 - G], [x0 + G, ty1, x1 - G, ty1], [x0 + G, ty2, x1 - G, ty2]);
+      var right = Math.random() < 0.5, low = Math.random() < 0.5;
+      var doors = [{ x: right ? tx2 : tx1, y: low ? ty2 : ty1, a0: 0, a1: Math.PI * 2 }];
+      var stops = ['f/2.8 · 1/125 · ISO 100', 'f/4 · 1/160 · ISO 200', 'f/8 · 1/125 · ISO 100'];
       var total = 0;
       segs.forEach(function (sg) { sg.len = Math.abs(sg[2] - sg[0]) + Math.abs(sg[3] - sg[1]); total += sg.len; });
-      return { x0: x0, y0: y0, W: W, H: H, segs: segs, doors: doors, total: total, label: (W / 40).toFixed(2) + ' m' };
+      return { x0: x0, y0: y0, W: W, H: H, segs: segs, doors: doors, total: total, label: stops[Math.floor(Math.random() * stops.length)] };
     }
     function paint(now) {
       ctx.clearRect(0, 0, w, h);
@@ -298,9 +287,9 @@
       for (var gx = (plan.x0 % G) + 0.5; gx < w; gx += G * 2) { ctx.moveTo(gx, 0); ctx.lineTo(gx, h); }
       for (var gy = (plan.y0 % G) + 0.5; gy < h; gy += G * 2) { ctx.moveTo(0, gy); ctx.lineTo(w, gy); }
       ctx.stroke();
-      // Walls, drawn in order up to the current length.
+      // Frame lines, drawn in order up to the current length.
       var left = plan.total * ease;
-      ctx.globalAlpha = 0.26 * base * fade; ctx.lineWidth = 2.5; ctx.lineCap = 'square';
+      ctx.globalAlpha = 0.24 * base * fade; ctx.lineWidth = 1.5; ctx.lineCap = 'square';
       ctx.beginPath();
       for (var i = 0; i < plan.segs.length && left > 0; i++) {
         var sg = plan.segs[i], f = Math.min(1, left / sg.len);
@@ -308,7 +297,7 @@
         left -= sg.len;
       }
       ctx.stroke();
-      // Doors and the dimension line appear once the walls are up.
+      // The focus point and the exposure line appear once the frame is up.
       var late = Math.max(0, (k - 0.7) / 0.3);
       if (late > 0) {
         var showLabel = w >= 900;
@@ -321,7 +310,7 @@
         ctx.fillStyle = accent; ctx.font = '600 11px ' + (getComputedStyle(doc.body).fontFamily || 'sans-serif');
         ctx.textAlign = 'center'; if (showLabel) ctx.fillText(plan.label, plan.x0 + plan.W / 2, yd - 7);
       }
-      // Drafting guides follow the pointer (mouse or trackpad only).
+      // Framing guides follow the pointer (mouse or trackpad only).
       if (pointer.on) {
         var px = snap(pointer.x) + 0.5, py = snap(pointer.y) + 0.5;
         ctx.globalAlpha = 0.35 * base; ctx.strokeStyle = accent; ctx.lineWidth = 1;

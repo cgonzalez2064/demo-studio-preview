@@ -1,16 +1,25 @@
 {
- "destacado-casa": {
+ "destacado-cafe": {
   "h": 1125,
-  "src": "house-exterior.jpg",
+  "src": "case-coffee.jpg",
   "variants": [
    480,
    900
   ],
   "w": 900
  },
- "est-dibujo": {
+ "est-diseno": {
   "h": 1050,
-  "src": "web-design.jpg",
+  "src": "hero-workspace.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-edicion": {
+  "h": 1050,
+  "src": "hero-studio.jpg",
   "variants": [
    800,
    1400
@@ -26,7 +35,16 @@
   ],
   "w": 1400
  },
- "est-materioteca": {
+ "est-locacion": {
+  "h": 1050,
+  "src": "content-shoot.jpg",
+  "variants": [
+   800,
+   1400
+  ],
+  "w": 1400
+ },
+ "est-muestras": {
   "h": 1050,
   "src": "branding.jpg",
   "variants": [
@@ -35,82 +53,25 @@
   ],
   "w": 1400
  },
- "est-mesa": {
+ "est-producto": {
   "h": 1050,
-  "src": "hero-workspace.jpg",
+  "src": "case-skincare.jpg",
   "variants": [
    800,
    1400
   ],
   "w": 1400
  },
- "est-obra": {
+ "est-set": {
   "h": 1050,
-  "src": "structure.jpg",
+  "src": "product-shoot.jpg",
   "variants": [
    800,
    1400
   ],
   "w": 1400
  },
- "est-oficina": {
-  "h": 1050,
-  "src": "office-interior.jpg",
-  "variants": [
-   800,
-   1400
-  ],
-  "w": 1400
- },
- "est-presentacion": {
-  "h": 1050,
-  "src": "client-meeting.jpg",
-  "variants": [
-   800,
-   1400
-  ],
-  "w": 1400
- },
- "est-visita": {
-  "h": 1050,
-  "src": "team-site.jpg",
-  "variants": [
-   800,
-   1400
-  ],
-  "w": 1400
- },
- "hero-dormitorio": {
-  "h": 1125,
-  "src": "bedroom.jpg",
-  "variants": [
-   360,
-   600,
-   900
-  ],
-  "w": 900
- },
- "hero-materiales": {
-  "h": 1125,
-  "src": "hero-workspace.jpg",
-  "variants": [
-   360,
-   600,
-   900
-  ],
-  "w": 900
- },
- "hero-sala": {
-  "h": 1350,
-  "src": "living-room.jpg",
-  "variants": [
-   480,
-   800,
-   1080
-  ],
-  "w": 1080
- },
- "interiorista-retrato": {
+ "fotografa-retrato": {
   "h": 600,
   "src": "consultant-portrait.jpg",
   "variants": [
@@ -118,6 +79,46 @@
    800
   ],
   "w": 800
+ },
+ "hero-muestras": {
+  "h": 1125,
+  "src": "hero-workspace.jpg",
+  "variants": [
+   360,
+   600,
+   900
+  ],
+  "w": 900
+ },
+ "hero-producto": {
+  "h": 1125,
+  "src": "case-skincare.jpg",
+  "variants": [
+   360,
+   600,
+   900
+  ],
+  "w": 900
+ },
+ "hero-retrato": {
+  "h": 1125,
+  "src": "portrait-3.jpg",
+  "variants": [
+   360,
+   600,
+   900
+  ],
+  "w": 900
+ },
+ "hero-set": {
+  "h": 1350,
+  "src": "product-shoot.jpg",
+  "variants": [
+   480,
+   800,
+   1080
+  ],
+  "w": 1080
  },
  "nosotros-equipo": {
   "h": 845,
@@ -128,7 +129,7 @@
   ],
   "w": 1400
  },
- "perfil-interiorista": {
+ "perfil-fotografa": {
   "h": 1125,
   "src": "consultant-portrait.jpg",
   "variants": [
@@ -137,45 +138,36 @@
   ],
   "w": 900
  },
- "proy-bodega": {
+ "proy-app": {
   "h": 600,
-  "src": "warehouse.jpg",
+  "src": "case-app.jpg",
   "variants": [
    480,
    800
   ],
   "w": 800
  },
- "proy-casa": {
+ "proy-cafe": {
   "h": 600,
-  "src": "house-exterior.jpg",
+  "src": "case-coffee.jpg",
   "variants": [
    480,
    800
   ],
   "w": 800
  },
- "proy-clinica": {
+ "proy-cosmetica": {
   "h": 600,
-  "src": "hallway-architecture.jpg",
+  "src": "case-skincare.jpg",
   "variants": [
    480,
    800
   ],
   "w": 800
  },
- "proy-cocina": {
+ "proy-gimnasio": {
   "h": 600,
-  "src": "kitchen.jpg",
-  "variants": [
-   480,
-   800
-  ],
-  "w": 800
- },
- "proy-departamento": {
-  "h": 600,
-  "src": "bedroom.jpg",
+  "src": "case-fitness.jpg",
   "variants": [
    480,
    800
@@ -191,9 +183,18 @@
   ],
   "w": 800
  },
- "proy-oficinas": {
+ "proy-moda": {
   "h": 600,
-  "src": "office-building.jpg",
+  "src": "case-fashion.jpg",
+  "variants": [
+   480,
+   800
+  ],
+  "w": 800
+ },
+ "proy-podcast": {
+  "h": 600,
+  "src": "podcast.jpg",
   "variants": [
    480,
    800
@@ -209,16 +210,17 @@
   ],
   "w": 800
  },
- "proy-terraza": {
-  "h": 600,
-  "src": "rooftop.jpg",
+ "svc-alimentos": {
+  "h": 667,
+  "src": "case-restaurant.jpg",
   "variants": [
-   480,
-   800
+   600,
+   800,
+   1000
   ],
-  "w": 800
+  "w": 1000
  },
- "svc-anteproyecto": {
+ "svc-editorial": {
   "h": 667,
   "src": "web-design.jpg",
   "variants": [
@@ -228,9 +230,9 @@
   ],
   "w": 1000
  },
- "svc-asesoria": {
+ "svc-empaques": {
   "h": 667,
-  "src": "client-meeting.jpg",
+  "src": "case-coffee.jpg",
   "variants": [
    600,
    800,
@@ -238,9 +240,9 @@
   ],
   "w": 1000
  },
- "svc-comercial": {
+ "svc-eventos": {
   "h": 667,
-  "src": "office-interior.jpg",
+  "src": "event-activation.jpg",
   "variants": [
    600,
    800,
@@ -248,37 +250,7 @@
   ],
   "w": 1000
  },
- "svc-exteriores": {
-  "h": 667,
-  "src": "rooftop.jpg",
-  "variants": [
-   600,
-   800,
-   1000
-  ],
-  "w": 1000
- },
- "svc-iluminacion": {
-  "h": 667,
-  "src": "lobby.jpg",
-  "variants": [
-   600,
-   800,
-   1000
-  ],
-  "w": 1000
- },
- "svc-interiorismo": {
-  "h": 667,
-  "src": "living-room.jpg",
-  "variants": [
-   600,
-   800,
-   1000
-  ],
-  "w": 1000
- },
- "svc-materiales": {
+ "svc-identidad": {
   "h": 667,
   "src": "branding.jpg",
   "variants": [
@@ -288,9 +260,9 @@
   ],
   "w": 1000
  },
- "svc-mobiliario": {
+ "svc-locales": {
   "h": 667,
-  "src": "kitchen.jpg",
+  "src": "case-hotel.jpg",
   "variants": [
    600,
    800,
@@ -298,9 +270,9 @@
   ],
   "w": 1000
  },
- "svc-obra": {
+ "svc-negocio": {
   "h": 667,
-  "src": "team-site.jpg",
+  "src": "case-fashion.jpg",
   "variants": [
    600,
    800,
@@ -308,9 +280,9 @@
   ],
   "w": 1000
  },
- "svc-planos": {
+ "svc-producto": {
   "h": 667,
-  "src": "hero-plans.jpg",
+  "src": "case-skincare.jpg",
   "variants": [
    600,
    800,
@@ -318,9 +290,9 @@
   ],
   "w": 1000
  },
- "svc-remodelacion": {
+ "svc-redes": {
   "h": 667,
-  "src": "remodel.jpg",
+  "src": "social-content.jpg",
   "variants": [
    600,
    800,
@@ -328,9 +300,39 @@
   ],
   "w": 1000
  },
- "svc-residencial": {
+ "svc-retrato": {
   "h": 667,
-  "src": "house-exterior.jpg",
+  "src": "portrait-1.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-retratos": {
+  "h": 667,
+  "src": "team-group.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-set": {
+  "h": 667,
+  "src": "product-shoot.jpg",
+  "variants": [
+   600,
+   800,
+   1000
+  ],
+  "w": 1000
+ },
+ "svc-video": {
+  "h": 667,
+  "src": "content-shoot.jpg",
   "variants": [
    600,
    800,
