@@ -47,3 +47,20 @@
 #tarifas { --hm: 2 }
 #preguntas { --hm: 2 }
 #sesion { --hm: 2 }
+.demo-banner { position: relative; z-index: 60; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 16px; padding: 9px 16px; background: #1c1a17; color: #f2ede4; font: 400 14px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; }
+.demo-banner p { margin: 0; max-width: none; color: rgba(255, 255, 255, .92); font: inherit; }
+.demo-banner a { color: #fff; font-weight: 650; text-underline-offset: 3px; }
+.demo-banner .demo-home { margin-right: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; min-height: 32px; }
+.demo-banner .demo-home:hover { text-decoration: underline; }
+.demo-banner .demo-all { font-weight: 600; }
+.demo-banner .demo-sum { font-weight: 600; color: #f2ede4; }
+.demo-banner .demo-note { color: rgba(242, 237, 228, .7); }
+.demo-views { display: inline-flex; max-width: 100%; overflow-x: auto; scrollbar-width: none; padding: 3px; border-radius: 999px; background: rgba(255, 255, 255, .14); }
+.demo-views a { padding: 4px 12px; border-radius: 999px; text-decoration: none; font-weight: 600; color: rgba(255, 255, 255, .86); transition: background-color .2s ease, color .2s ease; }
+.demo-views a:hover { color: #fff; }
+.demo-views a[aria-current] { background: #fff; color: #1c1a17; }
+.demo-banner a.demo-cta { display: inline-flex; align-items: center; min-height: 32px; padding: 0 14px; border-radius: 999px; background: #c9653a; color: #fff; text-decoration: none; font-weight: 650; }
+.demo-banner a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 559px) { .demo-banner { gap: 6px 12px; padding: 7px 12px; font-size: 13px; } .demo-views a { padding: 3px 10px; } .demo-banner .demo-sum, .demo-banner .demo-note { display: none; } }
+@media print { .demo-banner { display: none; } }
+body > .nav, body > header.nav, .nav { top: var(--demo-off, 0px) !important; }
