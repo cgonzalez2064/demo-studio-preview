@@ -123,12 +123,27 @@
       steps.forEach(function (s) { io.observe(s); });
     });
 
+    /* ---- Menu: mark the section in view ---- */
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      var links = $$('.nav-links a[href^="#"], .menu a[href^="#"]:not(.btn)'), map = {};
+      links.forEach(function (a) { var id = a.getAttribute('href').slice(1); (map[id] = map[id] || []).push(a); });
+      var spy = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          links.forEach(function (a) { a.removeAttribute('aria-current'); });
+          map[e.target.id].forEach(function (a) { a.setAttribute('aria-current', 'true'); });
+        });
+      }, { rootMargin: '-35% 0px -60% 0px' });
+      Object.keys(map).forEach(function (id) { var el = doc.getElementById(id); if (el) spy.observe(el); });
+    })();
+
     /* ---- FAQ ---- */
     $$('.faq-q').forEach(function (b) {
       b.addEventListener('click', function () {
         var open = b.getAttribute('aria-expanded') === 'true';
-        $$('.faq-q', b.closest('.faq')).forEach(function (o) { o.setAttribute('aria-expanded', 'false'); });
-        b.setAttribute('aria-expanded', open ? 'false' : 'true');
+        $$('.faq-q', b.closest('.faq')).forEach(function (o) { o.setAttribute('aria-expanded', 'false'); o.closest('.faq-item').classList.remove('open'); });
+        b.setAttribute('aria-expanded', open ? 'false' : 'true'); b.closest('.faq-item').classList.toggle('open', !open);
       });
     });
 
@@ -239,6 +254,13 @@
       });
     }
     sizePins();
+    /* ---- Back to top: appears after the first screen, its ring fills with the page ---- */
+    var top = doc.createElement('button'); top.type = 'button'; top.className = 'totop'; top.setAttribute('data-top', '');
+    top.setAttribute('aria-label', 'Volver arriba');
+    top.innerHTML = '<svg viewBox="0 0 52 52" aria-hidden="true"><circle class="tt-track" cx="26" cy="26" r="24"/><circle class="tt-ring" cx="26" cy="26" r="24" pathLength="100"/><path d="M26 34V19M19.5 25.5 26 19l6.5 6.5"/></svg>';
+    doc.body.appendChild(top);
+    var ring = $('.tt-ring', top);
+    $$('[data-top]').forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' }); }); });
     var lastY = window.scrollY, ticking = false;
     function frame() {
       ticking = false;
@@ -247,9 +269,10 @@
       if (nav) {
         var past = heroEl ? y > heroEl.offsetHeight - 120 : y > 40;
         nav.classList.toggle('is-solid', nav.hasAttribute('data-solid') ? y > 20 : past);
-        nav.classList.toggle('is-hidden', y > lastY && y > 500 && !root.classList.contains('menu-open'));
       }
       lastY = y;
+      top.classList.toggle('on', y > vh * 0.9 && y < max - 90 && !root.classList.contains('menu-open'));
+      ring.style.strokeDashoffset = (100 - (max > 0 ? clamp(y / max, 0, 1) : 0) * 100).toFixed(1);
       if (prog) prog.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
       if (!calm) pars.forEach(function (p) { if (!p.on) return; var r = p.el.parentNode.getBoundingClientRect(); p.el.style.transform = 'translate3d(0,' + ((r.top + r.height / 2 - vh / 2) * -p.k).toFixed(1) + 'px,0)'; });
       words.forEach(function (w) {
