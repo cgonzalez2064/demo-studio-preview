@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(fonts/LibreFranklin-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(fonts/LibreFranklin-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(fonts/SourceSerif4-normal-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(fonts/SourceSerif4-normal-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --p-bg: #edccbe; --p-surface: #e8c2b2; --p-ink: #351a2b; --p-muted: #6c4857;
+  --p-accent: #351a2b; --p-accent-ink: #edccbe; --p-action: #351a2b; --p-action-ink: #edccbe;
+  --p-inv-bg: #351a2b; --p-inv-surface: #45273a; --p-inv-ink: #edccbe; --p-inv-muted: #c9a9a4;
+  --p-inv-accent: #edccbe; --p-inv-accent-ink: #351a2b; --p-inv-action: #edccbe; --p-inv-action-ink: #351a2b;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-text: "Libre Franklin", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
+
+
+  /* page CSS: only inside visuals */
+  .nav__logo .mark { width: 24px; height: 24px; }
+  .portrait { margin: 0; border-radius: var(--r-lg); overflow: hidden; height: 100%; min-height: 0; }
+  .portrait > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 22%); }
+  @media (max-width: 1023px) { .portrait { height: auto; aspect-ratio: 4 / 5; } }
+  @media (min-width: 640px) and (max-width: 1023px) { .portrait { aspect-ratio: 16 / 9; } }
+  @media (max-width: 639px) { .grid.fill:has(> .portrait) { display: flex; flex-direction: column; gap: var(--s-6); } .grid.fill > .portrait { flex: 1 1 0; aspect-ratio: auto; height: auto; min-height: 240px; } }
+  @media (max-width: 359px) { .nav__logo { font-size: 0; gap: 0; } }
+  @media (max-width: 639px) { .closing__links .footer__col { grid-column: 1 / -1; } }
+  .closing__links .footer__col li { overflow-wrap: anywhere; }
+  .develop { margin: 0; border-radius: var(--r-lg); overflow: hidden; height: var(--ly-fit); }
+  .develop > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 1023px) { .develop { height: auto; aspect-ratio: 4 / 3; margin-top: var(--s-6); } }
+  @media (min-width: 1024px) { #portafolio .tile__media { --tile-ratio: 4 / 3; } }
+
+.px-1 { --ly-pos: 60% 50% }
+#proceso { --h: 2 }
+#tarifas { --hm: 2 }
+#sesion { --hm: 2 }
+.px-2 { --pos: 50% 30% }

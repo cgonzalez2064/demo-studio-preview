@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sitios web para estudios de arquitectura e interiorismo · Demostración</title>
+<title>Sitios web para estudios de diseño y fotografía · Demostración</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Demostración de sitios web para estudios de arquitectura, interioristas y diseñadores en los cuatro paquetes de TeraDevs.">
+<meta name="description" content="Demostración de sitios web para estudios de diseño, fotógrafos y creativos en los cuatro paquetes de TeraDevs.">
 <meta name="theme-color" content="#12110f">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <style>
@@ -48,6 +48,9 @@ img, svg { display: block; }
 .nav.light .nav-cta { background: var(--ink); color: #fff; }
 .nav-cta:active { transform: scale(.96); }
 @media (min-width: 860px) { .nav-links { display: flex; } .nav-cta { margin-left: 0; } }
+.mark { min-width: 0; flex: 0 1 auto; } .mark span { overflow: hidden; text-overflow: ellipsis; } .nav-cta { flex: none; }
+.back-strip { display: inline-block; padding: 0 0 14px; color: inherit; font-size: .8125rem; font-weight: 600; text-decoration: none; opacity: .8; }
+@media (min-width: 860px) { .back-strip { display: none; } }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; isolation: isolate; overflow: hidden; background: var(--night); color: #fff; padding: 120px 0 0; }
@@ -341,18 +344,19 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
 </head>
 <body>
 <nav class="nav" id="nav" aria-label="Principal">
-  <a class="mark" href="#top"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Sitios para estudios de arquitectura</span></a>
-  <div class="nav-links"><a href="#paquetes">Paquetes</a><a href="#tiempos">Tiempos</a><a href="#comparar">Comparar</a><a href="#planes">Planes</a><a href="#preguntas">Preguntas</a></div>
-  <a class="nav-cta" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20de%20sitios%20web%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20elegir%20un%20paquete." target="_blank" rel="noopener noreferrer">Solicitar cotización</a>
+  <a class="mark" href="#top"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Sitios para estudios creativos</span></a>
+  <div class="nav-links"><a class="nav-back" href="https://demo.teradevsgt.com/">← Todas las demos</a><a href="#paquetes">Paquetes</a><a href="#tiempos">Tiempos</a><a href="#comparar">Comparar</a><a href="#planes">Planes</a><a href="#preguntas">Preguntas</a></div>
+  <a class="nav-cta" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20de%20sitios%20web%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20elegir%20un%20paquete." target="_blank" rel="noopener noreferrer">Solicitar cotización</a>
 </nav>
 
 <header class="hero" id="top">
   <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i></div>
   <div class="wrap">
     <div class="hero-text">
+      <a class="back-strip" href="https://demo.teradevsgt.com/">← Todas las demos</a><br class="back-strip">
       <span class="chip"><b>En vivo</b> Demostración de cuatro paquetes</span>
-      <h1>Un sitio a la <em>altura</em> de los espacios que usted diseña.</h1>
-      <p class="lead">Compare el mismo sitio en los cuatro paquetes. Cada versión es un sitio independiente, con su propia paleta de colores, y cada nivel incorpora más secciones, funciones y acabados. Todas cargan con rapidez, se adaptan a cualquier dispositivo y reciben solicitudes por formulario y WhatsApp.</p>
+      <h1>Un sitio a la <em>altura</em> de las imágenes que usted crea.</h1>
+      <p class="lead">Compare cuatro sitios, uno por paquete. Cada versión tiene su propio diseño, tipografía y paleta de colores, y cada nivel incorpora más secciones, funciones y animaciones. Todas cargan con rapidez, se adaptan a cualquier dispositivo y reciben solicitudes por formulario y WhatsApp.</p>
       <div class="ctas">
         <a class="btn btn-light" href="#paquetes">Ver los paquetes <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn btn-glass" href="#elegir">Asesoría para elegir</a>
@@ -380,7 +384,7 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
         </div>
         <div class="phone"><div class="ps loading" id="pscreen"><iframe title="Vista previa del sitio en celular" tabindex="-1"></iframe><a class="open" href="profesional/"><span>Abrir</span></a></div></div>
       </div>
-      <p class="caption">Vista en vivo de la demostración. El estudio, los proyectos y los datos son ficticios.</p>
+      <p class="caption">Vista en vivo de la demostración. El estudio, la fotógrafa y los datos son ficticios.</p>
     </div>
   </div>
 </header>
@@ -396,14 +400,14 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
             <span class="tbar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="turl">alero.gt/express</span></span>
             <span class="timg"><img src="assets/demo-thumbs/express.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"><span class="tgo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3H3.5v9.5H13V10M9 3h4v4M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Ver sitio completo</span></span>
           </a>
-          <div class="thead"><h3>Express</h3><p class="swatch"><span aria-hidden="true"><i style="background:#f1f2f0"></i><i style="background:#3f5f75"></i><i style="background:#15191d"></i></span>Paleta Pizarra</p><p class="for">Para interioristas y arquitectos que inician su presencia digital</p></div>
+          <div class="thead"><h3>Express</h3><p class="swatch"><span aria-hidden="true"><i style="background:#e6dbc7"></i><i style="background:#ddd0b9"></i><i style="background:#062b8a"></i></span>Paleta Cobalto</p><p class="for">Para fotógrafos y diseñadores que inician su presencia digital</p></div>
           <p class="price"><small>Pago único</small><strong>Q4,800</strong> <span class="vat">+ IVA</span></p>
           <ul class="meta"><li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3l2 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>2 semanas</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 6h5M5.5 9h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>3 secciones</li></ul>
-          <ul class="feat"><li class="plus">Incluye:</li><li>Sitio de una página: portada, servicios y contacto</li><li>Formulario y botón de WhatsApp</li><li>Diseño adaptable a dispositivos móviles</li></ul>
+          <ul class="feat"><li class="plus">Incluye:</li><li>Sitio de una página: portada, sesiones con precios y contacto</li><li>Botón para reservar por correo o WhatsApp</li><li>Diseño adaptable a dispositivos móviles</li></ul>
           <div class="cost"><p class="plan">Mantenimiento sugerido: <strong>Cuidado</strong> · Q450/mes + IVA</p><p class="year">Inversión el primer año: <strong>Q8,850 + IVA</strong>, que incluye el sitio y 9 meses del plan (los 3 primeros meses no tienen costo).</p></div>
           <div class="actions">
             <a class="go" href="express/">Ver Express <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Express%20%28Q4%2C800%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Express</a>
+            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Express%20%28Q4%2C800%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Express</a>
           </div>
         </li>
         <li class="tier starter rv">
@@ -412,14 +416,14 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
             <span class="tbar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="turl">alero.gt/starter</span></span>
             <span class="timg"><img src="assets/demo-thumbs/starter.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"><span class="tgo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3H3.5v9.5H13V10M9 3h4v4M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Ver sitio completo</span></span>
           </a>
-          <div class="thead"><h3>Starter</h3><p class="swatch"><span aria-hidden="true"><i style="background:#f2efe6"></i><i style="background:#5b6b34"></i><i style="background:#1b1e16"></i></span>Paleta Olivo</p><p class="for">Para interioristas y estudios pequeños con clientes recurrentes</p></div>
+          <div class="thead"><h3>Starter</h3><p class="swatch"><span aria-hidden="true"><i style="background:#a6b3bc"></i><i style="background:#d6c4b8"></i><i style="background:#2c3620"></i></span>Paleta Pizarra y salvia</p><p class="for">Para fotógrafos independientes con clientes recurrentes</p></div>
           <p class="price"><small>Pago único</small><strong>Q6,800</strong> <span class="vat">+ IVA</span></p>
           <ul class="meta"><li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3l2 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>3 semanas</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 6h5M5.5 9h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>5 secciones</li></ul>
-          <ul class="feat"><li class="plus">Todo lo de Express, más:</li><li>Perfil del consultor con su trayectoria</li><li>Testimonios de clientes</li><li>Estadísticas de visitas al sitio</li></ul>
+          <ul class="feat"><li class="plus">Todo lo de Express, más:</li><li>Tipos de sesión con fotografías y tarifas</li><li>Formulario de reserva</li><li>Capítulos con fotografía al desplazarse</li></ul>
           <div class="cost"><p class="plan">Mantenimiento sugerido: <strong>Cuidado</strong> · Q450/mes + IVA</p><p class="year">Inversión el primer año: <strong>Q10,850 + IVA</strong>, que incluye el sitio y 9 meses del plan (los 3 primeros meses no tienen costo).</p></div>
           <div class="actions">
             <a class="go" href="starter/">Ver Starter <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Starter%20%28Q6%2C800%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Starter</a>
+            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Starter%20%28Q6%2C800%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Starter</a>
           </div>
         </li>
         <li class="tier profesional rv">
@@ -428,14 +432,14 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
             <span class="tbar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="turl">alero.gt/profesional</span></span>
             <span class="timg"><img src="assets/demo-thumbs/profesional.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"><span class="tgo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3H3.5v9.5H13V10M9 3h4v4M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Ver sitio completo</span></span>
           </a>
-          <div class="thead"><h3>Profesional</h3><p class="swatch"><span aria-hidden="true"><i style="background:#f2ede4"></i><i style="background:#b5532b"></i><i style="background:#1c1a17"></i></span>Paleta Terracota</p><p class="for">Para estudios con proyectos que mostrar</p></div>
+          <div class="thead"><h3>Profesional</h3><p class="swatch"><span aria-hidden="true"><i style="background:#edccbe"></i><i style="background:#e8c2b2"></i><i style="background:#351a2b"></i></span>Paleta Rosa y berenjena</p><p class="for">Para estudios con portafolio que mostrar</p></div>
           <p class="price"><small>Pago único</small><strong>Q10,500</strong> <span class="vat">+ IVA</span></p>
           <ul class="meta"><li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3l2 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>4 a 5 semanas</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 6h5M5.5 9h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8 secciones</li></ul>
-          <ul class="feat"><li class="plus">Todo lo de Starter, más:</li><li>Proyectos con buscador y filtro por tipo</li><li>Formulario para agendar visitas</li><li>Sección de modalidades y revisión sin costo</li></ul>
+          <ul class="feat"><li class="plus">Todo lo de Starter, más:</li><li>Portafolio de clientes sobre fondo oscuro</li><li>Proceso de trabajo en tres pasos animados</li><li>Servicios, tarifas y formulario para agendar</li></ul>
           <div class="cost"><p class="plan">Mantenimiento sugerido: <strong>Gestión</strong> · Q850/mes + IVA</p><p class="year">Inversión el primer año: <strong>Q18,150 + IVA</strong>, que incluye el sitio y 9 meses del plan (los 3 primeros meses no tienen costo).</p></div>
           <div class="actions">
             <a class="go" href="profesional/">Ver Profesional <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Profesional%20%28Q10%2C500%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Profesional</a>
+            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Profesional%20%28Q10%2C500%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Profesional</a>
           </div>
         </li>
         <li class="tier premium rv">
@@ -444,14 +448,14 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
             <span class="tbar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="turl">alero.gt/premium</span></span>
             <span class="timg"><img src="assets/demo-thumbs/premium.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"><span class="tgo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3H3.5v9.5H13V10M9 3h4v4M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Ver sitio completo</span></span>
           </a>
-          <div class="thead"><h3>Premium</h3><p class="swatch"><span aria-hidden="true"><i style="background:#c8a46a"></i><i style="background:#1b1a17"></i><i style="background:#12110f"></i></span>Paleta Grafito</p><p class="for">Para estudios con equipo, obras en curso y varios servicios</p></div>
+          <div class="thead"><h3>Premium</h3><p class="swatch"><span aria-hidden="true"><i style="background:#ebe5e3"></i><i style="background:#0f7d45"></i><i style="background:#2b2622"></i></span>Paleta Rosa gris y verde</p><p class="for">Para estudios con equipo, set propio y varios servicios</p></div>
           <p class="price"><small>Pago único, desde</small><strong>Q19,500</strong> <span class="vat">+ IVA</span></p>
           <ul class="meta"><li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3l2 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>6 a 8 semanas</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 6h5M5.5 9h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Sitio completo</li></ul>
-          <ul class="feat"><li class="plus">Todo lo de Profesional, más:</li><li>Una página por servicio y versión en inglés</li><li>Planes mensuales, resultados en curso y estudio</li><li>Tema oscuro con animaciones e interacciones avanzadas</li></ul>
+          <ul class="feat"><li class="plus">Todo lo de Profesional, más:</li><li>Portafolio de seis proyectos y servicios con vista previa</li><li>Set del estudio, tarifas y preguntas frecuentes</li><li>Animaciones al desplazarse en cada sección</li></ul>
           <div class="cost"><p class="plan">Mantenimiento sugerido: <strong>Evolución</strong> · Q1,200/mes + IVA</p><p class="year">Inversión el primer año: <strong>desde Q30,300 + IVA</strong>, que incluye el sitio y 9 meses del plan (los 3 primeros meses no tienen costo).</p></div>
           <div class="actions">
             <a class="go" href="premium/">Ver Premium <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Premium%20%28desde%20Q19%2C500%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Premium</a>
+            <a class="wa" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Premium%20%28desde%20Q19%2C500%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Cotizar Premium</a>
           </div>
         </li>
       </ul>
@@ -468,7 +472,7 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
         <div class="row r-profesional"><b>Profesional<small>8 secciones</small></b><div class="track"><span class="fill range">4 a 5 semanas</span></div></div>
         <div class="row r-premium"><b>Premium<small>Sitio completo</small></b><div class="track"><span class="fill range">6 a 8 semanas</span></div></div>
       </div>
-      <p class="note">Los plazos son estimados. Si tiene una fecha clave, como una feria o la entrega de una obra, planificamos el calendario de trabajo con usted.</p>
+      <p class="note">Los plazos son estimados. Si tiene una fecha clave, como un lanzamiento o una feria, planificamos el calendario de trabajo con usted.</p>
     </div>
   </section>
 
@@ -501,13 +505,13 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
             <tr><th scope="row">Secciones</th><td class="txt">3</td><td class="txt">5</td><td class="txt profesional">8</td><td class="txt">Sin límite</td></tr>
             <tr><th scope="row">Portada, servicios y contacto</th><td class="express"><i class="y" aria-label="Sí"></i></td><td class="starter"><i class="y" aria-label="Sí"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
             <tr><th scope="row">Formulario y WhatsApp</th><td class="express"><i class="y" aria-label="Sí"></i></td><td class="starter"><i class="y" aria-label="Sí"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
-            <tr><th scope="row">Perfil de la interiorista o proyectos, y testimonios</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="y" aria-label="Sí"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
-            <tr><th scope="row">Proyectos con buscador y filtros</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
-            <tr><th scope="row">Agenda de reuniones en línea</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
-            <tr><th scope="row">Sectores, modalidades y formas de pago</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
+            <tr><th scope="row">Tipos de sesión con fotografías y tarifas</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="y" aria-label="Sí"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
+            <tr><th scope="row">Portafolio de clientes</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
+            <tr><th scope="row">Formulario para agendar sesiones</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
+            <tr><th scope="row">Proceso de trabajo y formas de pago</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="y" aria-label="Sí"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
             <tr><th scope="row">Página propia por servicio</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="n" aria-label="No"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
             <tr><th scope="row">Versión en inglés</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="n" aria-label="No"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
-            <tr><th scope="row">Planes mensuales, resultados en curso y estudio</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="n" aria-label="No"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
+            <tr><th scope="row">Set del estudio y preguntas frecuentes</th><td class="express"><i class="n" aria-label="No"></i></td><td class="starter"><i class="n" aria-label="No"></i></td><td class="profesional"><i class="n" aria-label="No"></i></td><td class="premium"><i class="y" aria-label="Sí"></i></td></tr>
             <tr><th scope="row">Plan de cuidado sugerido</th><td class="txt">Cuidado</td><td class="txt">Cuidado</td><td class="txt profesional">Gestión</td><td class="txt">Evolución</td></tr>
             <tr><th scope="row">Animaciones</th><td class="txt">Sencillas</td><td class="txt">Sencillas</td><td class="txt profesional">Fluidas</td><td class="txt">Elaboradas</td></tr>
           </tbody>
@@ -562,8 +566,8 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
       <div class="head rv"><p class="kicker">Guía rápida</p><h2>¿Qué paquete le conviene?</h2><p class="sub">Responda dos preguntas y le sugeriremos un paquete. Es una referencia inicial; con gusto lo asesoramos sin compromiso.</p></div>
       <form class="quiz rv" id="quiz">
         <fieldset><legend>¿Qué tipo de empresa es la suya?</legend>
-          <label><input type="radio" name="docs" value="1" checked> Consultor o estudio pequeño</label>
-          <label><input type="radio" name="docs" value="n"> Estudio con equipo y proyectos</label>
+          <label><input type="radio" name="docs" value="1" checked> Fotógrafo o diseñador independiente</label>
+          <label><input type="radio" name="docs" value="n"> Estudio con equipo y portafolio</label>
         </fieldset>
         <fieldset><legend>¿Qué necesita su sitio?</legend>
           <label><input type="radio" name="need" value="basic" checked> Que los clientes me encuentren y me contacten</label>
@@ -582,12 +586,12 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
         <details><summary>¿Qué es el dominio y el hosting?</summary><p>El dominio es la dirección de su sitio (por ejemplo, suestudio.com). El hosting es el servidor donde se aloja el sitio para que esté disponible en todo momento. Ambos están incluidos el primer año.</p></details>
         <details><summary>¿Qué significa «+ IVA»?</summary><p>Los precios no incluyen el impuesto; el IVA se agrega al facturar. El pago del sitio se realiza 50% al inicio y 50% contra su aprobación.</p></details>
         <details><summary>¿Por qué el desarrollo toma varias semanas?</summary><p>Durante ese periodo diseñamos el sitio con su identidad visual, redactamos y organizamos el contenido, realizamos las rondas de revisión con usted y lo publicamos en su dominio. Los paquetes con más secciones requieren más contenido y más revisiones.</p></details>
-        <details><summary>¿Qué necesito entregar para empezar?</summary><p>Su logotipo, los servicios que ofrece, sus proyectos, sus datos de contacto y, de preferencia, fotografías propias de su equipo y su trabajo. Si no cuenta con textos, nosotros los redactamos. El plazo de entrega inicia al recibir este material.</p></details>
-        <details><summary>¿Qué es una «sección»?</summary><p>Cada bloque de contenido del sitio: portada, servicios, proyectos, testimonios y contacto, entre otros. A más secciones, más información puede presentar sobre su empresa.</p></details>
+        <details><summary>¿Qué necesito entregar para empezar?</summary><p>Su logotipo, los servicios que ofrece, su portafolio, sus datos de contacto y, de preferencia, fotografías propias de su equipo y su trabajo. Si no cuenta con textos, nosotros los redactamos. El plazo de entrega inicia al recibir este material.</p></details>
+        <details><summary>¿Qué es una «sección»?</summary><p>Cada bloque de contenido del sitio: portada, servicios, portafolio, tarifas y contacto, entre otros. A más secciones, más información puede presentar sobre su empresa.</p></details>
         <details><summary>¿Qué sucede después de los 3 meses incluidos?</summary><p>Usted elige un plan de mantenimiento para que el sitio continúe en línea, con respaldos y horas de cambios incluidas. Si no requiere cambios frecuentes, el plan Cuidado es suficiente.</p></details>
         <details><summary>¿Hay descuento si pago el mantenimiento por año?</summary><p>Sí. Al pagar 12 meses por adelantado obtiene 10% de descuento en Cuidado (Q4,860 + IVA al año), 15% en Gestión (Q8,670 + IVA) y 20% en Evolución (Q11,520 + IVA).</p></details>
         <details><summary>¿Puedo cambiar de paquete más adelante?</summary><p>Sí. Puede iniciar con un paquete básico y agregar secciones o funciones más adelante; solo se cotiza la diferencia.</p></details>
-        <details><summary>¿Puedo administrar el contenido yo mismo?</summary><p>Sí, con nuestra plataforma administrable: un panel en español para actualizar textos, fotografías, proyectos y honorarios, que se cotiza según sus necesidades. Si prefiere delegarlo, los cambios están incluidos en su plan de mantenimiento.</p></details>
+        <details><summary>¿Puedo administrar el contenido yo mismo?</summary><p>Sí, con nuestra plataforma administrable: un panel en español para actualizar textos, fotografías, portafolio y tarifas, que se cotiza según sus necesidades. Si prefiere delegarlo, los cambios están incluidos en su plan de mantenimiento.</p></details>
       </div>
     </div>
   </section>
@@ -599,7 +603,7 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
         <h2>Su sitio es su primer caso de éxito.</h2>
         <p>Cuéntenos sobre su estudio y sus servicios, y le recomendaremos el paquete adecuado, sin compromiso.</p>
         <div class="ctas">
-          <a class="btn btn-light" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20de%20sitios%20web%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20elegir%20un%20paquete." target="_blank" rel="noopener noreferrer">Solicitar cotización</a>
+          <a class="btn btn-light" href="https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20de%20sitios%20web%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20elegir%20un%20paquete." target="_blank" rel="noopener noreferrer">Solicitar cotización</a>
           <a class="btn btn-glass" href="#elegir">Asesoría para elegir</a>
         </div>
       </div>
@@ -609,7 +613,7 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
 
 <footer>
   <div class="wrap">
-    <p>Precios publicados por TeraDevs, más IVA. Todos los paquetes incluyen dominio y hosting durante el primer año, SEO básico y 3 meses de mantenimiento. Los plazos de entrega son estimados e inician al recibir textos y fotografías. El estudio, los proyectos y los datos de esta demostración son ficticios.</p>
+    <p>Precios publicados por TeraDevs, más IVA. Todos los paquetes incluyen dominio y hosting durante el primer año, SEO básico y 3 meses de mantenimiento. Los plazos de entrega son estimados e inician al recibir textos y fotografías. El estudio, la fotógrafa y los datos de esta demostración son ficticios.</p>
   </div>
 </footer>
 
@@ -688,7 +692,7 @@ footer .wrap > p { margin: 0; padding-top: 24px; border-top: 1px solid var(--lin
 
   /* Quiz. */
   var f = document.getElementById('quiz'), out = document.getElementById('answer');
-  var WA = {"express": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Express%20%28Q4%2C800%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "starter": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Starter%20%28Q6%2C800%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "profesional": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Profesional%20%28Q10%2C500%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "premium": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Premium%20%28desde%20Q19%2C500%20%2B%20IVA%29%20para%20estudios%20de%20arquitectura%20e%20interiorismo%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n."};
+  var WA = {"express": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Express%20%28Q4%2C800%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "starter": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Starter%20%28Q6%2C800%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "profesional": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Profesional%20%28Q10%2C500%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n.", "premium": "https://wa.me/50256192730?text=Buen%20d%C3%ADa.%20Revis%C3%A9%20la%20demostraci%C3%B3n%20del%20paquete%20Premium%20%28desde%20Q19%2C500%20%2B%20IVA%29%20para%20estudios%20de%20dise%C3%B1o%20y%20fotograf%C3%ADa%20y%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n."};
   var info = { express: ['Express', 'Q4,800 + IVA', 'Cuidado'], starter: ['Starter', 'Q6,800 + IVA', 'Cuidado'], profesional: ['Profesional', 'Q10,500 + IVA', 'Gestión'], premium: ['Premium', 'desde Q19,500 + IVA', 'Evolución'] };
   function pick() {
     var docs = f.docs.value, need = f.need.value;

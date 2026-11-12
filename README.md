@@ -1,6 +1,6 @@
 # Alero · vista previa / preview
 
-Static, shareable preview of the TeraDevs demo architecture and interior design studio website (fictional studio, projects and data).
+Static, shareable preview of the TeraDevs demo design and photography studio website (fictional studio, photographer and data).
 
 - Chooser page: `/`
 - One site per TeraDevs web package: `/express/`, `/starter/`, `/profesional/`, `/premium/`
